@@ -45,9 +45,12 @@ export default function Home() {
               <CardTitle>Sto lat, sto lat !</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Droga Madziu, skoro już to czytasz to nadszedł piątek. Co prawda urodziny masz w niedzielę, ale już dziś przejdę do składania życzeń. Z okazji urodzin, życzę Ci dużo zdrowia, szczęścia i pomyślności. Dużo sukcesów, radości i uśmiechu na twarzy. Sprawnie zdanego prawo jazdy, a później szerokości i cierpliwości na drodze. Rozwijania swoich pasji, czerpania radości z życia ze mną i wszystkiego czego sobie skrycie życzysz.</p>
+              <p>Droga Madziu, skoro już to czytasz to nadszedł piątek. Co prawda urodziny masz w niedzielę, ale już dziś przejdę do składania życzeń.
+                 Z okazji urodzin, życzę Ci dużo zdrowia, szczęścia i pomyślności.
+                 Dużo sukcesów, radości i uśmiechu na twarzy. Sprawnie zdanego prawo jazdy, a później szerokości i cierpliwości na drodze.
+                  Rozwijania swoich pasji, czerpania radości z życia ze mną i wszystkiego czego sobie skrycie życzysz.</p>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex flex-col">
               <p>Aby tradycji stało się za dość, przygotowałem mały quiz, który wdroży Cię w dalszą część zadań urodzinowych. Życzę powodzenia.</p>
               <Button onClick={() => setCurrentStep(1)}>Przejdz dalej</Button>
             </CardFooter>
@@ -59,7 +62,8 @@ export default function Home() {
               <CardTitle>Quiz</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">Quiz składa się z sześciu etapów. Rozwiązaniem każdego z etapów jest cyfra (bardzo często jest to data), którą należy wpisać w okienka pod spodem. Po uzupełnieniu wszystkich okienek klkiknij przycisk SPRWADZ KOD.</p>
+              <p className="mb-4">Quiz składa się z sześciu etapów. Rozwiązaniem każdego z etapów jest cyfra (bardzo często jest to data), którą należy wpisać w okienka pod spodem.
+                Po uzupełnieniu wszystkich okienek klkiknij przycisk SPRWADZ KOD.</p>
               <div className="flex justify-center">
                 <Carousel className="w-full max-w-xs">
                   <CarouselContent>
