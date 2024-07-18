@@ -37,7 +37,7 @@ export default function Home() {
     setIsError(true);
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <Card>
         {currentStep === 0 && (
           <>
@@ -50,7 +50,7 @@ export default function Home() {
                  Dużo sukcesów, radości i uśmiechu na twarzy. Sprawnie zdanego prawo jazdy, a później szerokości i cierpliwości na drodze.
                   Rozwijania swoich pasji, czerpania radości z życia ze mną i wszystkiego czego sobie skrycie życzysz.</p>
             </CardContent>
-            <CardFooter className="flex flex-col">
+            <CardFooter className="flex flex-col gap-4">
               <p>Aby tradycji stało się za dość, przygotowałem mały quiz, który wdroży Cię w dalszą część zadań urodzinowych. Życzę powodzenia.</p>
               <Button onClick={() => setCurrentStep(1)}>Przejdz dalej</Button>
             </CardFooter>

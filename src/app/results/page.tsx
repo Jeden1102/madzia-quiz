@@ -10,7 +10,7 @@ import {
 
 export default function Results() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 max-w-[500px]">
       <Card>
           <>
             <CardHeader>
@@ -21,49 +21,50 @@ export default function Results() {
 
               <div className="my-4 border border-gray-100 shadow-md p-4 rounded-md flex flex-col gap-2">
                 <p>#1</p>
-                <pre>
+                <p>
                   Strażakiem jestem z dumą i pasją,
 To miejsce zna mą bohaterską rację.
 Gdy syrena woła, tam szybko biegnę,
 Gdzie strażaków serca zawsze biją pewnie.
-                </pre>
+                </p>
               </div>
                             <div className="my-4 border border-gray-100 shadow-md p-4 rounded-md flex flex-col gap-2">
                 <p>#2</p>
-                <pre>
+                <p>
 Tam, gdzie pierwszy raz z wędką stanąłem,
 I z Tobą ten magiczny moment dzieliłem.
 Rybki w wodzie pluskały wesoło,
 A my wspominaliśmy to miejsce cicho i wkoło
-                </pre>
+                </p>
               </div>
                             <div className="my-4 border border-gray-100 shadow-md p-4 rounded-md flex flex-col gap-2">
                 <p>#3</p>
-                <pre>
+                <p>
 Pod mostem tym, co skrywa ryby,
 Tam okonie skaczą, nie brak im siły.
 Z wędką tam staliśmy w ciepłe dni,
 Pamiętasz? To miejsce znajdź teraz ty!
-                </pre>
+                </p>
               </div>
                             <div className="my-4 border border-gray-100 shadow-md p-4 rounded-md flex flex-col gap-2">
                 <p>#4</p>
-                <pre>
+                <p>
 Na kanale tym, gdzie szczęście mnie nie opuszcza,
 Każda wędkarska wyprawa tam jest udana i słuszna.
 Nawet gdy w innych miejscach zawód mnie spotka,
 Tu zawsze ryba na haczyku się znajdzie, ot tak!
-                </pre>
+                </p>
               </div>
                             <div className="my-4 border border-gray-100 shadow-md p-4 rounded-md flex flex-col gap-2">
                 <p>#5</p>
-                <pre>
+                <p>
 Pod mostem tym, co kryje tajemnice,
 Gdzie ryby nie chcą brać, choć woda migocze.
 Tam, gdzie na próżno zarzucamy haczyk,
 Pamiętasz te chwile, gdy cisza była krzykiem?
-                </pre>
+                </p>
               </div>
+              <img src="/frame.png" width="200" height="200" className="mt-4" alt="" />
             </CardContent>
           </>
       </Card>
