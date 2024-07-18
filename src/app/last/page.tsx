@@ -10,7 +10,7 @@ import {
 
 export default function Results() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 max-w-[500px]">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 max-w-[500px] mx-auto">
       <Card>
           <>
             <CardHeader>
