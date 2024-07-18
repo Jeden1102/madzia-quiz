@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { useRouter } from 'next/router'
 import {
   Carousel,
   CarouselContent,
@@ -25,7 +24,6 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 export default function Home() {
-    const router = useRouter()
   const [currentStep, setCurrentStep] = useState(0);
   const [value, setValue] = useState("");
   const [isError, setIsError] = useState(false);
@@ -34,8 +32,7 @@ export default function Home() {
     console.log("900729|2107|1988|45|0407|1507|1912");
     const valid = "9007292107198845040715071912";
     if (value === valid) {
-      router.push("/results");
-      return;
+      window.location.href = "/results"
     }
     setIsError(true);
   };
