@@ -12,7 +12,6 @@ export default function Results() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Card>
-        {currentStep === 0 && (
           <>
             <CardHeader>
               <CardTitle>Gratulacje!</CardTitle>
@@ -28,7 +27,6 @@ Nieeee to nuuudy. Moja Madziu, wiesz jak bardzo lubię dzielić się moimi pasja
 Połamania kija moja kochana ❤</p>
             </CardContent>
           </>
-        )}
       </Card>
     </main>
   );

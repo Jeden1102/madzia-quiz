@@ -12,7 +12,6 @@ export default function Results() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Card>
-        {currentStep === 0 && (
           <>
             <CardHeader>
               <CardTitle>Gratulacje!</CardTitle>
@@ -67,7 +66,6 @@ Pamiętasz te chwile, gdy cisza była krzykiem?
               </div>
             </CardContent>
           </>
-        )}
       </Card>
     </main>
   );
