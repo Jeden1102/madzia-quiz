@@ -25,6 +25,7 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 export default function Home() {
+    const router = useRouter()
   const [currentStep, setCurrentStep] = useState(0);
   const [value, setValue] = useState("");
   const [isError, setIsError] = useState(false);
