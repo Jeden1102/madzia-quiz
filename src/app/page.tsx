@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-
+import { useRouter } from 'next/router'
 import {
   Carousel,
   CarouselContent,
@@ -33,7 +33,7 @@ export default function Home() {
     console.log("900729|2107|1988|45|0407|1507|1912");
     const valid = "9007292107198845040715071912";
     if (value === valid) {
-      console.log("ok");
+      router.push("/results");
       return;
     }
     setIsError(true);
@@ -47,9 +47,10 @@ export default function Home() {
               <CardTitle>Sto lat, sto lat !</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Droga Madziu....</p>
+              <p>Droga Madziu, skoro już to czytasz to nadszedł piątek. Co prawda urodziny masz w niedzielę, ale już dziś przejdę do składania życzeń. Z okazji urodzin, życzę Ci dużo zdrowia, szczęścia i pomyślności. Dużo sukcesów, radości i uśmiechu na twarzy. Sprawnie zdanego prawo jazdy, a później szerokości i cierpliwości na drodze. Rozwijania swoich pasji, czerpania radości z życia ze mną i wszystkiego czego sobie skrycie życzysz.</p>
             </CardContent>
             <CardFooter>
+              <p>Aby tradycji stało się za dość, przygotowałem mały quiz, który wdroży Cię w dalszą część zadań urodzinowych. Życzę powodzenia.</p>
               <Button onClick={() => setCurrentStep(1)}>Przejdz dalej</Button>
             </CardFooter>
           </>
@@ -60,7 +61,7 @@ export default function Home() {
               <CardTitle>Quiz</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">Opis...</p>
+              <p className="mb-4">Quiz składa się z sześciu etapów. Rozwiązaniem każdego z etapów jest cyfra (bardzo często jest to data), którą należy wpisać w okienka pod spodem. Po uzupełnieniu wszystkich okienek klkiknij przycisk SPRWADZ KOD.</p>
               <div className="flex justify-center">
                 <Carousel className="w-full max-w-xs">
                   <CarouselContent>
